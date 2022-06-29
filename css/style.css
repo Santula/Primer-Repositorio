@@ -1,0 +1,269 @@
+/*LO DE ABAJO SE EXTRAE DE GOOGLE FONTS*/
+/*Es para VINCULAR la hoja de CSS con google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,200&display=swap');
+
+/*62.5 para que cada REM valga 10px (xq 1rem=16px)*/
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;}
+
+
+html{font-size: 62.5%;}
+
+header{	background-color: rgba(231, 249, 239, .2);}
+
+body{	
+	background-image: url(../img/ezequiel-carreratodos.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center right;
+	backdrop-filter: blur(1.5px);
+
+
+}
+
+
+
+.logo{
+	font-size: 2.5rem;
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+}
+
+
+
+
+
+ul{
+	list-style: none;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+
+		}
+
+nav a{
+	color: whitesmoke;
+	text-decoration: none;
+	display: inline-block;
+
+}
+
+
+.main{
+	background-color: rgba(231, 249, 239, .2);
+}
+
+
+.div1,.div2,.div3,.div4{
+	margin: 0rem auto;
+	padding: 4rem 2rem;
+	text-align: center;
+
+}
+
+
+
+
+.divH2{
+	padding: 2rem ;
+	font-size: 3rem;
+}
+
+.div2h2{
+	padding: 2rem ;
+	font-size: 2rem;
+}
+
+.pIndex1,.pIndex2,.pIndex3{
+	margin: auto 10rem;
+	font-size: 2rem;
+	line-height: 2rem;
+
+}
+
+.divImg{
+	margin:  2rem 4rem;
+	border-style: solid;
+	border-color: whitesmoke;
+
+}
+
+
+
+
+.div2{
+	text-align: center;
+}
+
+
+
+.pIndex3{
+	padding: 2rem;
+	margin: auto 10rem;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+
+
+.grid{display: grid; width: 99%; grid-gap: auto 10rem auto 10rem;}
+.grid-template-columns-row{
+
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows:repeat(2, 1fr) ;
+
+	grid-template-areas:
+	 'divh2 divImg' 
+	 'div2img div2h2';*/
+
+	justify-items: center; /*Justify para eje Horizontal*/
+	align-items: center; /*aling. vertical*/
+
+	justify-content:center;
+	justify-items: center;
+}
+
+
+.divH2{grid-area: divh2;}
+.divImg{grid-area: divImg;}
+.div2h2{grid-area: div2h2;}
+.div2img{grid-area: div2img;}
+
+
+footer{
+	background-color: rgba(231, 249, 239, .2);
+	display: flex;
+	padding-top: 6rem;
+	justify-content: space-evenly;
+	margin-bottom: 0rem; padding-bottom: 0rem;
+}
+
+
+
+
+
+
+/*HTML COMUNES*/
+
+
+@keyframes textAlpha{ 
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+
+main{animation-name: textAlpha;
+	animation-duration: 1s;}
+
+nav{
+	font-size: 2rem;
+	background-color: rgba(87,117,203, .8);
+	border-radius: 3rem;
+	text-decoration: none;
+	width: 50rem;
+	border: groove;
+	margin:auto; /*2 arriba y auto lo centra al medio a los costados*/
+	padding: 1rem;
+	justify-content: space-between;
+	margin: 2rem auto 0rem;
+
+
+}
+
+
+
+
+
+
+/*HTML SERVICIOS*/
+
+.mainServicios{
+	display: flex;
+	padding: 3rem 3rem;
+	background-color: rgba(231, 249, 239, .2);
+
+}
+
+
+.section1views,.section2views,.section3views{
+text-align: center;
+}
+
+.section1views{
+	background-color: rgba(245, 245, 245, 0.8);
+	padding-bottom: 4rem;
+
+}
+
+.section2views{
+	background-color: rgba(245, 245, 245, 0.8);
+	padding-bottom: 4rem;
+}
+
+.section3views{
+	background-color: rgba(245, 245, 245, 0.8);
+	padding-bottom: 4rem;
+}
+
+.imgServicios{
+	padding-top: 3rem;
+	border-radius: 20%;
+	height: 20rem;
+
+}
+
+
+/*HTML PRODUCTOS*/
+
+.mainProductos{
+	display:flex;
+	padding: 3rem 3rem;
+	background-color: rgba(231, 249, 239, .2);
+}
+
+/*HTML QUIEN SOY*/
+.headerQuienSoy{
+
+}
+
+/*HTML Quien soy*/
+.sectionAboutme{text-align: center; background-color: rgba(231, 249, 239, .2);}
+
+/*HTML CONTACTO*/
+.mainContacto{
+	display:inline-flex;
+	padding: 9rem ; margin: 0rem;
+	justify-content: center;
+	display: flex;
+	font-weight: bold;
+	background-color: rgba(231, 249, 239, .2);
+}
+
+
+.fieldset{
+		background-color: rgba(87,117,203, 1);
+}
+
+/*SELECTORES DE CLASE , lo primero defino yo para guiarme, (el text-red) CARE SENSITIVE, lo segundo la , se pueden usar sin limites*/
+/*Para seleccionar la parte en el html es class= "lo que defini"*/
+.textRed{color: red;}
+.textCenter{text-align: center;}
+.textRight{text-align: right;}
+.textLeft{text-align: left;}
+.textBold{font-weight: 600;}
+.textLight{font-weight: 300;}
+.bgRed{background-color: #e67967;}
+.bgOrange{background-color: #f6b26b;}
+.flexDirection{flex-direction: row;}
+
+.
+
+
+/*SELECTORES DE ID- no se puede repetir - 1 vez x pantalla- nombre que yo quiera*/
+#productos{color: yellowgreen;}
+
