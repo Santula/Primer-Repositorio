@@ -19,23 +19,14 @@ body{
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center right;
-	backdrop-filter: blur(1.5px);
-
-
+	backdrop-filter: blur(1.5px)
 }
-
-
-
-.logo{
+/* .logo{
 	font-size: 2.5rem;
 	text-align: center;
 	padding-top: 2rem;
 	padding-bottom: 3rem;
-}
-
-
-
-
+} */
 
 ul{
 	list-style: none;
@@ -49,8 +40,9 @@ nav a{
 	color: whitesmoke;
 	text-decoration: none;
 	display: inline-block;
-
+	font-size: 25px
 }
+
 
 
 .main{
@@ -62,11 +54,7 @@ nav a{
 	margin: 0rem auto;
 	padding: 4rem 2rem;
 	text-align: center;
-
 }
-
-
-
 
 .divH2{
 	padding: 2rem ;
@@ -82,24 +70,22 @@ nav a{
 	margin: auto 10rem;
 	font-size: 2rem;
 	line-height: 2rem;
-
 }
 
 .divImg{
 	margin:  2rem 4rem;
 	border-style: solid;
 	border-color: whitesmoke;
-
 }
-
-
-
 
 .div2{
 	text-align: center;
 }
 
 
+#brandTitle{
+	font-size: 25px; 
+}
 
 .pIndex3{
 	padding: 2rem;
@@ -108,8 +94,6 @@ nav a{
 	font-size: 2rem;
 	line-height: 2rem;
 }
-
-
 
 .grid{display: grid; width: 99%; grid-gap: auto 10rem auto 10rem;}
 .grid-template-columns-row{
@@ -161,19 +145,17 @@ main{animation-name: textAlpha;
 	animation-duration: 1s;}
 
 nav{
-	font-size: 2rem;
-	background-color: rgba(87,117,203, .8);
-	border-radius: 3rem;
+	font-size: 20px;
+	/* background-color: rgba(87,117,203, .8); */
+	/* border-radius: 3rem;
 	text-decoration: none;
 	width: 50rem;
 	border: groove;
-	margin:auto; /*2 arriba y auto lo centra al medio a los costados*/
-	padding: 1rem;
+	margin:auto; 2 arriba y auto lo centra al medio a los costados */
+	/* padding: 1rem;
 	justify-content: space-between;
-	margin: 2rem auto 0rem;
-
-
-}
+	margin: 2rem auto 0rem; */
+ }
 
 
 
